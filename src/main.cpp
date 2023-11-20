@@ -10,6 +10,7 @@ std::mutex waiter_waite;
 
 void application(std::string &dish) {
 	std::this_thread::sleep_for(std::chrono::seconds(rand_time(5, 5)));
+
 	std::cout << "Order received!" << std::endl;
 	dish = rand_order();
 }
