@@ -4,7 +4,6 @@
 
 int rand_time(int vol, int step) {
 	srand(std::time(nullptr));
-
 	return rand() % vol + step;
 }
 
@@ -29,6 +28,6 @@ std::string rand_order() {
 		return "Sushi";
 		break;
 	default:
-		std::cout << "Ошибка рандомайзера блюд!" << std::endl;
+		std::cout << "The error of the randomizer of dishes!" << std::endl;
 	}
 }
